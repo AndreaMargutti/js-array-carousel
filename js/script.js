@@ -27,7 +27,7 @@ images[currentActiveIndex].classList.add('active');
 const preBtn = document.getElementById('pre');
 const nextBtn = document.getElementById('next');
 
-//creazione evento
+//creazione evento per next
 nextBtn.addEventListener('click', function(){
     //rimuovo active da immagine attiva
     images[currentActiveIndex].classList.remove('active');
@@ -40,4 +40,19 @@ nextBtn.addEventListener('click', function(){
 
     //aggiungo classe actiuve su prossima immagine
     images[currentActiveIndex].classList.add('active');
+})
+
+//creazione evento per pre
+preBtn.addEventListener('click', function() {
+    //rimuovo active da img attiva
+    images[currentActiveIndex].classList.remove('active')
+
+    //decremento currentActiveIndex di 1
+    currentActiveIndex--;
+
+    //creo ciclo infinto
+    if (currentActiveIndex < 0) currentActiveIndex = images.length - 1; 
+
+    //inserisco active in immagine precednete
+    images[currentActiveIndex].classList.add('active')
 })
