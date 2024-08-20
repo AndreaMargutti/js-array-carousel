@@ -13,3 +13,23 @@
 }
 
 /* # generals*/
+
+#carousel {
+    margin: 50px auto;
+    height: 400px;
+    width: 600px;
+}
+
+#carousel #gallery {
+    height: 100%;
+    width: 100%;
+}
+
+#carousel img {
+    display: none;
+    height: 100%;
+}
+
+#carousel .active {
+    display: block;
+}
