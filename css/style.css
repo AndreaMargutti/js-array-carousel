@@ -12,12 +12,13 @@
     margin: 0 auto;
 }
 
-/* # generals*/
+/* # Carousel */
 
 #carousel {
     margin: 50px auto;
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 700px;
+    position: relative;
 }
 
 #carousel #gallery {
@@ -33,4 +34,22 @@
 
 #carousel .active {
     display: block;
+}
+
+/* Icons */
+
+i {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#pre {
+    left: -15%;
+}
+
+#next {
+    right: -15%;
 }
