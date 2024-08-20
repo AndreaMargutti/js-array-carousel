@@ -21,3 +21,23 @@ console.log(images);
 //Rendiamo active la prima immagine
 let currentActiveIndex = 0;
 images[currentActiveIndex].classList.add('active');
+
+// # Eventi Dinamici
+//recupero i due bottoni
+const preBtn = document.getElementById('pre');
+const nextBtn = document.getElementById('next');
+
+//creazione evento
+nextBtn.addEventListener('click', function(){
+    //rimuovo active da immagine attiva
+    images[currentActiveIndex].classList.remove('active');
+    
+    //incremento di uno l'index
+    currentActiveIndex++;
+
+    //creo ciclo infinto
+    if (currentActiveIndex > sources.length - 1) currentActiveIndex = 0;
+
+    //aggiungo classe actiuve su prossima immagine
+    images[currentActiveIndex].classList.add('active');
+})
