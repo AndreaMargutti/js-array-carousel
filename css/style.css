@@ -70,4 +70,10 @@ i {
 #thumbnails img {
     height: 100%;
     border-radius: 20px;
+    filter: grayscale(1);
+}
+
+#thumbnails .active {
+    filter: grayscale(0);
+    box-shadow: 0 0 15px #42bdee;
 }
