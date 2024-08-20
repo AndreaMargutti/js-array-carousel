@@ -54,3 +54,20 @@ i {
 #next {
     right: -15%;
 }
+
+/* # Thumbnails */
+
+#thumbnails {
+    width: 700px;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 5px;
+    transform: translateX(-25px);
+}
+
+#thumbnails img {
+    height: 100%;
+    border-radius: 20px;
+}

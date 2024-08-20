@@ -1,6 +1,7 @@
 // ! Creiamo le immagini in modo dinamico
 // creo le immagini e recupero la galleria
 const carouselGallery = document.getElementById('gallery');
+const thumbnails = document.getElementById('thumbnails');
 const sources = ['img/01.webp', 'img/02.webp', 'img/03.webp', 'img/04.webp', 
 'img/05.webp']
 
@@ -12,6 +13,7 @@ for ( let i = 0; i < sources.length; i++) {
 }
 
 carouselGallery.innerHTML = img;
+thumbnails.innerHTML = img;
 console.log(carouselGallery);
 
 //recupero le immagini
